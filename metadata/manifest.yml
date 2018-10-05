@@ -1,6 +1,6 @@
 ---
 Name: nodejs
-Cartridge-Short-Name: NODEJSOLD
+Cartridge-Short-Name: NODEJS
 Display-Name: Node.js 0.1x
 Description: Node.js is a platform built on Chrome's JavaScript runtime for easily
   building fast, scalable network applications. Node.js is perfect for data-intensive

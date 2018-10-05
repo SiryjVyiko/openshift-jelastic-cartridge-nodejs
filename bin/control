@@ -163,7 +163,7 @@ function stop() {
 function restart() {
     stop
     start
-}
+} >> $OPENSHIFT_NODEJS_LOG_DIR/node.log
 
 function force_clean_build_enabled_for_latest_deployment(){
     return 0

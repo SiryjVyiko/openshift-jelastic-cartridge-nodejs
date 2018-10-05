@@ -101,7 +101,6 @@ function start() {
   fi
 }
 
-
 function stop() {
 
     if cartridge_pidfile_exists; then
@@ -230,9 +229,7 @@ function build() {
     if [ -f "${OPENSHIFT_REPO_DIR}"/ROOT/package.json ]; then
         (cd "${OPENSHIFT_REPO_DIR}/ROOT"; nodejs_context "npm install -d 2>&1")
     fi
-}
-
-
+} >> $OPENSHIFT_NODEJS_LOG_DIR/build.log
 
 function post-deploy() {
     if hot_deploy_enabled_for_latest_deployment; then
